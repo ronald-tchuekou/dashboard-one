@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'gp-root',
+  selector: 'do-root',
   templateUrl: './app.component.html',
   styles: []
 })

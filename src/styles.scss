@@ -4,5 +4,97 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/************** Button Section ***************/
+
+.btn {
+  transition: 300ms;
+  @apply flex-none flex flex-row justify-center items-center font-medium
+}
+
+// Variants
+.btn.primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-500/30
+}
+
+.btn.light {
+  @apply bg-white text-gray-500 hover:bg-gray-100/50 hover:text-gray-700 hover:shadow-xl hover:shadow-gray-500/30
+}
+
+.btn.dark {
+  @apply bg-gray-700 text-gray-100 hover:text-gray-50 hover:shadow-xl hover:shadow-gray-500/30
+}
+
+// Sizes
+.btn.large {
+  padding: 0 35px !important;
+  height: 60px !important;
+  @apply text-lg
+}
+
+.btn.icon-btn.large {
+  padding: 0 !important;
+  height: 60px !important;
+  width: 60px !important;
+  @apply text-lg
+}
+
+.btn.default {
+  padding: 0 30px !important;
+  height: 50px !important;
+  @apply text-base
+}
+
+.btn.icon-btn.default {
+  padding: 0 !important;
+  height: 50px !important;
+  width: 50px !important;
+  @apply text-base
+}
+
+.btn.small {
+  padding: 0 20px !important;
+  height: 40px !important;
+  @apply text-sm
+}
+
+.btn.icon-btn.small {
+  padding: 0 !important;
+  height: 40px !important;
+  width: 40px !important;
+  @apply text-sm
+}
+
+.btn.extra-small {
+  padding: 0 15px !important;
+  height: 30px !important;
+  @apply text-xs
+}
+
+.btn.icon-btn.extra-small {
+  padding: 0 !important;
+  height: 30px !important;
+  width: 30px !important;
+  @apply text-xs
+}
+
+// Styled
+.btn.rectangle {
+  @apply rounded-md
+}
+
+.btn.round {
+  @apply rounded-full
+}
